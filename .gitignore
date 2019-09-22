@@ -24,3 +24,6 @@ auth.json*
 /vendor/*
 /generated/*
 /setup
+
+/dev/tools
+/tools

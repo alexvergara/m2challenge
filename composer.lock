@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4d12ed80a4786e0213b2b69d85abe2e",
+    "content-hash": "0bf80256fce34e928855e28ef2981a8c",
     "packages": [
+        {
+            "name": "alexvergara/alpaca-test-components",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexvergara/alpaca-test-components.git",
+                "reference": "8bd0aef7e058b19ed58751fbb94406f3609ce621"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexvergara/alpaca-test-components/zipball/8bd0aef7e058b19ed58751fbb94406f3609ce621",
+                "reference": "8bd0aef7e058b19ed58751fbb94406f3609ce621",
+                "shasum": ""
+            },
+            "require": {
+                "snowdog/module-alpaca-components": "~1.3.0"
+            },
+            "type": "magento2-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "M2Challenge Alex Test components (Alpaca)",
+            "time": "2019-09-21T17:00:37+00:00"
+        },
+        {
+            "name": "alexvergara/alpaca-test-theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alexvergara/alpaca-test-theme.git",
+                "reference": "a5587a55292f9f9e68f2f454424aa6024bfdf05d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alexvergara/alpaca-test-theme/zipball/a5587a55292f9f9e68f2f454424aa6024bfdf05d",
+                "reference": "a5587a55292f9f9e68f2f454424aa6024bfdf05d",
+                "shasum": ""
+            },
+            "require": {
+                "alexvergara/alpaca-test-components": "^1.0",
+                "magento/framework": "*",
+                "snowdog/module-alpaca-components": "~1.3.0",
+                "snowdog/theme-frontend-alpaca": "^1.3"
+            },
+            "type": "magento2-theme",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "M2Challenge Alex Test theme (Alpaca)",
+            "time": "2019-09-21T17:43:51+00:00"
+        },
         {
             "name": "amzn/amazon-pay-and-login-magento-2-module",
             "version": "3.2.9",
@@ -11831,6 +11889,125 @@
             "time": "2015-10-13T18:44:15+00:00"
         },
         {
+            "name": "snowdog/frontools",
+            "version": "1.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SnowdogApps/magento2-frontools.git",
+                "reference": "c07efe91d7c795814db2dfcbf869f4be37c90419"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SnowdogApps/magento2-frontools/zipball/c07efe91d7c795814db2dfcbf869f4be37c90419",
+                "reference": "c07efe91d7c795814db2dfcbf869f4be37c90419",
+                "shasum": ""
+            },
+            "type": "magento2-component",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Set of front-end tools for Magento 2, based on Gulp.js",
+            "time": "2019-07-15T15:45:10+00:00"
+        },
+        {
+            "name": "snowdog/module-alpaca-components",
+            "version": "1.3.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SnowdogApps/magento2-alpaca-components.git",
+                "reference": "8136536e619690883e00ca9f7f0b133090f56008"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SnowdogApps/magento2-alpaca-components/zipball/8136536e619690883e00ca9f7f0b133090f56008",
+                "reference": "8136536e619690883e00ca9f7f0b133090f56008",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Components of the Alpaca theme for Magento 2",
+            "time": "2019-07-15T16:09:20+00:00"
+        },
+        {
+            "name": "snowdog/module-menu",
+            "version": "2.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SnowdogApps/magento2-menu.git",
+                "reference": "7fc6f5887290b9d988fafc6acd29af76dc9a8a11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SnowdogApps/magento2-menu/zipball/7fc6f5887290b9d988fafc6acd29af76dc9a8a11",
+                "reference": "7fc6f5887290b9d988fafc6acd29af76dc9a8a11",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "100.1.*|101.0.*|102.0.*",
+                "magento/module-backend": "100.1.*|100.2.*|101.0.*",
+                "magento/module-catalog": "101.0.*|102.0.*|103.0.*",
+                "magento/module-cms": "101.0.*|102.0.*|103.0.*"
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ],
+                "psr-4": {
+                    "Snowdog\\Menu\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kamil Balwierz",
+                    "email": "kamil@snow.dog"
+                }
+            ],
+            "description": "Provides powerful menu editor to replace category based menus in Magento 2",
+            "time": "2019-05-29T08:43:32+00:00"
+        },
+        {
+            "name": "snowdog/theme-frontend-alpaca",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SnowdogApps/magento2-alpaca-theme.git",
+                "reference": "4ddde8d92e64301cc434aea87fdc7be3f0894830"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SnowdogApps/magento2-alpaca-theme/zipball/4ddde8d92e64301cc434aea87fdc7be3f0894830",
+                "reference": "4ddde8d92e64301cc434aea87fdc7be3f0894830",
+                "shasum": ""
+            },
+            "require": {
+                "magento/framework": "*",
+                "snowdog/frontools": "^1.6",
+                "snowdog/module-alpaca-components": "~1.3.0",
+                "snowdog/module-menu": "^2.4"
+            },
+            "type": "magento2-theme",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Alpaca frontend theme for Magento 2",
+            "time": "2019-05-30T10:53:53+00:00"
+        },
+        {
             "name": "spomky-labs/otphp",
             "version": "v8.3.3",
             "source": {
@@ -19968,6 +20145,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "alexvergara/alpaca-test-theme": 20,
         "phpmd/phpmd": 0
     },
     "prefer-stable": false,
