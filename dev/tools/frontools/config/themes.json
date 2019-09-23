@@ -15,5 +15,14 @@
     "modules": {
       "Snowdog_Components": "vendor/alexvergara/alpaca-test-components/components"
     }
+  },
+  "theme-alex-alpaca-test": {
+    "parent": "alpaca",
+    "src": "vendor/snowdog/theme-frontend-alpaca",
+    "dest": "pub/static/frontend/Alexvergara/theme-alex-alpaca-test",
+    "locale": ["en_US"],
+    "modules": {
+      "Snowdog_Components": "vendor/snowdog/module-alpaca-components/components"
+    }
   }
 }

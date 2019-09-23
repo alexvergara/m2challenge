@@ -1,0 +1,41 @@
+<?php
+/**
+ * Copyright ©
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Alpaca-Test\Checkout\Block\Cart\Customer\Address $block */
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$customerSession = $objectManager->create('Magento\Customer\Model\Session');
+
+?>
+<?php if ($customerSession->isLoggedIn()): ?>
+<div class="block block-dashboard-addresses">
+    <div class="dashboard-items__title"><h3><?= $block->escapeHtml(__('Addresses')) ?></h3></div>
+    <div class="block-content">
+        <div class="box box-billing-address">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__('Default Billing Address')) ?></span>
+            </strong>
+            <div class="box-content">
+                <address>
+                    <?= $block->getPrimaryBillingAddressHtml() ?>
+                </address>
+            </div>
+        </div>
+        <div class="box box-shipping-address">
+            <strong class="box-title">
+                <span><?= $block->escapeHtml(__('Default Shipping Address')) ?></span>
+            </strong>
+            <div class="box-content">
+                <address>
+                    <?= $block->getPrimaryShippingAddressHtml() ?>
+                </address>
+            </div>
+        </div>
+    </div>
+</div>
+
+<?php endif; ?>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    layout="1column"
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd"
+>
+    <body>
+        <!-- customer -->
+        <referenceContainer name="customer-info">
+            <container
+                name="cart.customer.container"
+                as="cart_customer_container"
+                label="Cart Customer Container"
+                htmlTag="div"
+                htmlClass="row customer-info-container"
+                before="checkout.cart"
+            >
+                <container
+                    name="cart.customer.info.container"
+                    as="cart_customer_info_container"
+                    label="Cart Customer Info Container"
+                    htmlTag="div"
+                    htmlClass="col-xs-12 col-lg-6"
+                >
+                    <block
+                        class="Magento\Customer\Block\Account\Dashboard\Info"
+                        name="cart_customer_info"
+                        as="info"
+                        template="Magento_Checkout::cart/customer/info.phtml"
+                        cacheable="false"
+                    />
+                </container>
+                <container
+                    name="cart.customer.address.container"
+                    as="cart_customer_address_container"
+                    label="Cart Customer Address Container"
+                    htmlTag="div"
+                    htmlClass="col-xs-12 col-lg-6"
+                >
+                    <block
+                        class="Magento\Customer\Block\Account\Dashboard\Address"
+                        name="cart_customer_address"
+                        as="address"
+                        template="Magento_Checkout::cart/customer/address.phtml"
+                        cacheable="false"
+                    />
+                </container>
+            </container>
+        </referenceContainer>
+
+        <!-- moved elements -->
+        <move element="customer-info" destination="minicart" before="-"/>
+    </body>
+</page>
