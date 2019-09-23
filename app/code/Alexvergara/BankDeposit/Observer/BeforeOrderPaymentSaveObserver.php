@@ -22,7 +22,7 @@ class BeforeOrderPaymentSaveObserver implements ObserverInterface
      */
     public function execute(\Magento\Framework\Event\Observer $observer)
     {
-        /** @var \Magento\Sales\Model\Order\Payment $payment */
+        /** @var \Alexvergara\BankDeposit\Model\BankDeposit $payment */
         $payment = $observer->getEvent()->getPayment();
         $instructionMethods = [
             BankDeposit::PAYMENT_METHOD_BANKDEPOSIT_CODE

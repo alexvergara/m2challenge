@@ -38,4 +38,14 @@ class Bankdeposit extends \Magento\OfflinePayments\Block\Form\AbstractInstructio
         }
         return $this->_steps;
     }
+
+    /**
+     * Get checkout config
+     *
+     * @return object
+     */
+    public function getCheckoutConfig()
+    {
+        return $this->configProvider->getConfig();
+    }
 }

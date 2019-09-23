@@ -53,6 +53,7 @@ class BankDepositConfigProvider implements ConfigProviderInterface
         $config = [];
         foreach ($this->methodCodes as $code) {
             if ($this->methods[$code]->isAvailable()) {
+                $config['payment']['steps'][$code] = $this->getSteps($code);
                 $config['payment']['instructions'][$code] = $this->getInstructions($code);
             }
         }
@@ -71,7 +72,7 @@ class BankDepositConfigProvider implements ConfigProviderInterface
     }
 
     /**
-     * Get instructions text from config
+     * Get steps text from config
      *
      * @param string $code
      * @return string
@@ -79,5 +80,6 @@ class BankDepositConfigProvider implements ConfigProviderInterface
     protected function getSteps($code)
     {
         return nl2br($this->escaper->escapeHtml($this->methods[$code]->getSteps()));
+        //return nl2br($this->escaper->escapeHtml($this->methods[$code]->getInstructions()));
     }
 }

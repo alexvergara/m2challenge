@@ -1,0 +1,30 @@
+
+<!-- // TODO: Validate if BankDeposit !important -->
+<!-- // TODO: Styling -->
+<div>
+    <hr>
+
+    <form id="custom-checkout-form" class="form" data-bind="attr: {'data-hasrequired': $t('* Required Fields')}">
+        <fieldset class="fieldset">
+            <legend data-bind="i18n: 'Bank Deposit details'"></legend>
+
+            <hr>
+
+            <!-- ko foreach: getRegion('custom-checkout-form-fields') -->
+            <!-- ko template: getTemplate() --><!-- /ko -->
+            <!--/ko-->
+        </fieldset>
+        <!--div class="actions-toolbar">
+            <div class="primary">
+                <button type="button" data-bind="click: onSubmit" class="action">
+                    <span data-bind="i18n: 'Submit'"></span>
+                </button>
+            </div>
+            <div class="secondary">
+                <button type="reset">
+                    <span data-bind="i18n: 'Reset'"></span>
+                </button>
+            </div>
+        </div-->
+    </form>
+</div>
